@@ -99,13 +99,13 @@ Tras recargar Nginx, desde la red interna se accede a ambos sitios y desde la re
 En `www.web1.org` se ha creado el directorio `/privado` protegido con autenticación básica para que solo entren usuarios válidos.
 Se ha generado `/var/www/web1/privado` con su `index.html` y el fichero `/etc/nginx/.htpasswd`, y en el `location /privado/` se han añadido `auth_basic "Zona privada";` y `auth_basic_user_file /etc/nginx/.htpasswd;`.
 
-<img width="1914" height="1028" alt="image" src="https://github.com/user-attachments/assets/34784286-1594-45ec-8736-245fadbb0b63" />
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/8f78b29d-1589-4be4-8f9d-908df0ce942c" />
 
 Desde el cliente interno, al acceder a `http://www.web1.org/privado` aparece la ventana de login y, tras introducir credenciales correctas, se muestra la página privada.
 
-<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/3333166f-8b56-404c-be25-8badf7683605" />
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/ab135c2d-c042-4fe4-91f7-b82efe8464a6" />
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1840c1aa-f865-490f-a8f4-33f21c9eeb04" />
+<img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/9c730e86-09d0-47e7-8936-f5d2edf11fda" />
 
   
 ### h) Autentificación, Autorización y Control de acceso
